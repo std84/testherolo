@@ -1,0 +1,58 @@
+<div class="modal-header">
+  <h4 class="modal-title">{{moadleTitle}} </h4>
+</div>
+<div class="modal-body">
+ 	<div class="row">
+ 		<div class="col-md-6">
+ 			Title	
+ 		</div>
+ 		<div class="col-md-6">
+ 			<input [(ngModel)]="movie.Title" type="text" name="">
+ 		</div>
+ 	</div>
+ 	 <div class="row">
+ 		<div class="col-md-6">
+ 			Year	
+ 		</div>
+ 		<div class="col-md-6">
+ 			<input [(ngModel)]="movie.Year" type="text" name="">
+ 		</div>
+ 	</div>
+ 	 <div class="row">
+ 		<div class="col-md-6">
+ 			Runtime	
+ 		</div>
+ 		<div class="col-md-6">
+ 			<input [(ngModel)]="movie.Runtime" type="text" name="">
+ 		</div>
+ 	</div>
+ 	<div class="row">
+ 		<div class="col-md-6">
+ 			Genre	
+ 		</div>
+ 		<div class="col-md-6">
+ 			<input [(ngModel)]="movie.Genre"  type="text" name="">
+ 		</div>
+ 	</div>
+ 	 <div class="row">
+ 		<div class="col-md-6">
+ 			Director	
+ 		</div>
+ 		<div class="col-md-6">
+ 			<input [(ngModel)]="movie.Director"  type="text" name="">
+ 		</div>
+ 	</div>
+  <div class="row">
+    <div class="col-md-6">
+      Poster URL  
+    </div>
+    <div class="col-md-6">
+      <input [(ngModel)]="movie.Poster"  type="text" name="">
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+     <div class="btn btn-default" (click)=save() > Save</div>
+     <div class="btn btn-default" (click)=closeModal() > Close</div>
+
+</div>
